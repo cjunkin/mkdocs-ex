@@ -1,0 +1,49 @@
+site_name: My Docs
+
+plugins:
+  - search
+  - exclude-search:
+      exclude:
+        - projects/*
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [../src]
+          options:
+            show_bases: false
+            parameter_headings: true
+            show_symbol_type_heading: true
+            show_category_heading: true
+            docstring_style: "numpy"
+            docstring_section_style: "table"
+            # members: true
+            # find_stubs_package: true
+            # show_submodules: false
+            # summary: true
+
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - header.autohide
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Home:
+    - Index: index.md
+    - Inferences: inferences.md
+    - Errors: errors.md
+    - Schema: schema.md
