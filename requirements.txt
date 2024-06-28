@@ -1,0 +1,4 @@
+mkdocs-material 
+plantuml-markdown 
+mkdocs-exclude-search
+mkdocstrings-python  
