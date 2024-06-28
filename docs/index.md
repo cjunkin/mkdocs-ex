@@ -1,4 +1,4 @@
-# Welcome to Phoenix (DEMO)
+# PHOENIX API REF DEMO
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
